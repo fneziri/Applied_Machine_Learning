@@ -35,18 +35,20 @@ The dataset for this project is available on VLE. You need to use train_imperson
 
 ### Constructing and Selecting Features
 
-o Create additional features using a representation learner (e.g. Autoencoder, VAEs, SAEs, GAN etc). The latent space representation, simply a representation of compressed data by a representation leaner, may contain important information needed to represent original data point.
+- Create additional features using a representation learner (e.g. Autoencoder, VAEs, SAEs, GAN etc). The latent space representation, simply a representation of compressed data by a representation leaner, may contain important information needed to represent original data point.
 
-o Combine the additional features with original dataset. The combined dataset should have 154 (original features) + additional features. For example, if you created 10 features using SAE, the new combined dataset must have 164 input features + 1 target. 
+- Combine the additional features with original dataset. The combined dataset should have 154 (original features) + additional features. For example, if you created 10 features using SAE, the new combined dataset must have 164 input features + 1 target. 
 
-o Apply feature selection techniques (e.g. filter, wrapper and embedded) and see if any of the additional features created by a representation learner are selected.
+- Apply feature selection techniques (e.g. filter, wrapper and embedded) and see if any of the additional features created by a representation learner are selected.
 
 ### Building ML algorithms
-o Select candidate algorithms. Discuss the selection strategies for the candidate algorithms.
 
-o Finding the best configuration for these hyperparameters in such a high dimensional space is not a trivial challenge. Consider the model design components (e.g. no of layers, no of units per layer, loss function, activations, optimisers, dropout layer etc) as well as the hyperparameters (e.g. learning rate, dropout rate, batch size etc). Perform model-specific optimisations and iteratively debug model as complexity is added. Discuss the selection strategies for searching for the best configuration (e.g. trial and error, grid search, random search, Bayesian optimisation etc).
+- Select candidate algorithms. Discuss the selection strategies for the candidate algorithms.
+
+- Finding the best configuration for these hyperparameters in such a high dimensional space is not a trivial challenge. Consider the model design components (e.g. no of layers, no of units per layer, loss function, activations, optimisers, dropout layer etc) as well as the hyperparameters (e.g. learning rate, dropout rate, batch size etc). Perform model-specific optimisations and iteratively debug model as complexity is added. Discuss the selection strategies for searching for the best configuration (e.g. trial and error, grid search, random search, Bayesian optimisation etc).
 
 ### Evaluating model and analysing the results.
-o Evaluate the classification performance (e.g. accuracy, detection rate, false alarm, type II error, MCC and TBM (time has taken to build model) and TTM (time has taken to test model) – go beyond these measures if necessary) of the selected models on the test data and interpret the results. 
 
-o Discuss general model trade-offs (accuracy vs speed vs interpretability) of the chosen models considering a particular application (e.g. IoT, autonomous vehicle, etc) and propose two models (e.g. features selected and ML classifiers) and provide justification of choice. 
+- Evaluate the classification performance (e.g. accuracy, detection rate, false alarm, type II error, MCC and TBM (time has taken to build model) and TTM (time has taken to test model) – go beyond these measures if necessary) of the selected models on the test data and interpret the results. 
+
+- Discuss general model trade-offs (accuracy vs speed vs interpretability) of the chosen models considering a particular application (e.g. IoT, autonomous vehicle, etc) and propose two models (e.g. features selected and ML classifiers) and provide justification of choice. 
